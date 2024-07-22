@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            text-align: center;
+            padding: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head> 
+<body> 
+    <header>
+        <center><h1>STUDENT COURSE REGISTRATION PORTAL</h1></center>
+    </header> 
+    <nav>
+        <table>
+            <tr>
+                <td colspan="2"><button onclick="location.href='/home/'">Home</button></td>
+                <td><button onclick="location.href='/studentlist/'">Student List</button></td>
+                <td><button onclick="location.href='/courselist/'">Course List</button></td>
+                <td><button onclick="location.href='/register/'">Register</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="location.href='/enrolledlist/'">Enrolled List</button></td>
+                <td><button onclick="location.href='/addproject/'">Add Project</button></td>
+                <td><button onclick="location.href='/genericlistviewstudent/'">Generic Student List View</button></td>
+                <td><button onclick="location.href='/download_course_table_as_csv/'">Download Course as CSV</button></td>
+                <td><button onclick="location.href='/download_course_table_as_pdf/'">Download Course as PDF</button></td>
+            </tr>
+        </table>
+    </nav> <hr>
+    <main> <h3>
+        {% block content %} {% endblock %} </h3>
+    </main> 
+    <footer> 
+        <hr/> 
+        <p><center>&copy; Designed and Developed by Garvit Saraf, Dept. of CSE, BIT, Bangalore-04</center></p> 
+    </footer> 
+</body> 
+</html>
