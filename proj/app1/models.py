@@ -29,3 +29,10 @@ class projectForm(ModelForm):
     class Meta:  
         model=projectReg                      
         fields=['student','ptitle','planguage','pduration']
+
+'''
+s1=student(usn= ‘1BI21CS001’,name= ‘Harish’, sem=6)
+s1.save()
+
+c1=course(courseCode='21CS61',courseName='SE',courseCredits=3)
+c1.save()
