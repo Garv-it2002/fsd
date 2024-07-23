@@ -36,3 +36,4 @@ s1.save()
 
 c1=course(courseCode='21CS61',courseName='SE',courseCredits=3)
 c1.save()
+'''
