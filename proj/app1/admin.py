@@ -13,3 +13,5 @@ class courseAdmin(admin.ModelAdmin):
          list_display=('courseCode','courseName')     
          ordering=('courseCode',)     
          search_fields=('courseName',) 
+
+#python manage.py createsuperuser
